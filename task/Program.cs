@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿void Main()
+{
+    Console.Clear();
+    string[] array = { "hello", "2", "world", ":-)" };
+
+    int volumeArray = VolumeArray(array);
+    string[] createArray = CreateArray(volumeArray);
+    string[] resultArray = SelectArray(array, createArray);
+    PrintArray(resultArray);
+}
+
+Main();
