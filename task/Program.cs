@@ -28,4 +28,25 @@ string[] CreateArray(int volumeArr) // создание массива для з
     return createArray;
 }
 
+string[] SelectArray(string[] array, string[] resultArray) // заполнение созданного массива, заданной размерности, строками длиной <= 3
+{
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            resultArray[j] = array[i];
+            j++;
+        }
+    }
+    return resultArray;
+}
+
+void PrintArray(string[] arr) // печать массива
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]} ");
+    }
+}
 Main();
